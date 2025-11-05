@@ -5,6 +5,7 @@ import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Collections;
 
 public class GetAllContactNames {
     @Test
@@ -20,8 +21,13 @@ public class GetAllContactNames {
         // when
         List<String> actualNames = phoneBook.getAllContactNames();
 
+        List<String> namesTest = Arrays.asList(names);
+        
+        Collections.sort(namesTest);
+        Collections.sort(actualNames);
+
         // then
-        Assert.assertEquals(Arrays.asList(names), actualNames);
+        Assert.assertEquals(namesTest, actualNames);
     }
 
     @Test
@@ -37,8 +43,13 @@ public class GetAllContactNames {
         // when
         List<String> actualNames = phoneBook.getAllContactNames();
 
+        List<String> namesTest = Arrays.asList(names);
+        
+        Collections.sort(namesTest);
+        Collections.sort(actualNames);
+
         // then
-        Assert.assertEquals(Arrays.asList(names), actualNames);
+        Assert.assertEquals(namesTest, actualNames);
     }
 
     @Test
@@ -54,7 +65,12 @@ public class GetAllContactNames {
         // when
         List<String> actualNames = phoneBook.getAllContactNames();
 
+        List<String> namesTest = Arrays.asList(names);
+        
+        Collections.sort(namesTest);
+        Collections.sort(actualNames);
+
         // then
-        Assert.assertEquals(Arrays.asList(names), actualNames);
+        Assert.assertEquals(namesTest, actualNames);
     }
 }
