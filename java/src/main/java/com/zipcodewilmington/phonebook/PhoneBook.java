@@ -21,7 +21,7 @@ public class PhoneBook {
     }
 
     public PhoneBook() {
-        this.phonebook = new HashMap<>();
+        this.phonebook = new HashMap<String, List<String>>();
     }
 
     public void add(String name, String phoneNumber) {
